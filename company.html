@@ -460,15 +460,15 @@
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(25.080858, 121.396923);
-var mapProp = {center:myCenter, zoom:20, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var myCenter = new google.maps.LatLng(25.081250, 121.396584);
+var mapProp = {center:myCenter, zoom:16, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
 }
 </script>
 <!-- https://developers.google.com/maps/documentation/javascript/get-api-key?hl=zh-tw -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWFSiT45qNkH6svRcSNPpCw70bnScLh84&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=your_key&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
